@@ -5,8 +5,9 @@ tutors = [
     'Дмитрий', 'Борис', 'Елена'
 ]
 klasses = [
-    '9А', '7В', '9Б', '9В', '8Б', '45', '424', '12'
+    '9А', '7В', '9Б', '9В', '8Б'
 ]
+
 
 def sor_klasses():
     if len(klasses) < len(tutors):
@@ -14,6 +15,7 @@ def sor_klasses():
         yield zipped
     else:
         for i in range(len(tutors)):
-            yield (tutors[i], klasses[i])
+            yield tutors[i], klasses[i]
+
 
 print(*sor_klasses())
