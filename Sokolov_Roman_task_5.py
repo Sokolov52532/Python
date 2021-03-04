@@ -7,5 +7,5 @@ for number in src:
 print(result)
 
 #--------------------Оптимизированно--------------------------
-sor_src = [number for number in src if src.count(number) == 1]
-print(sor_src)
+result = [number for number in src if src.count(number) == 1]
+print(result)

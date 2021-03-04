@@ -8,14 +8,6 @@ klasses = [
     '9А', '7В', '9Б', '9В', '8Б'
 ]
 
+result = ((i, j) for i, j in zip_longest(tutors, klasses) if i)
 
-def sor_klasses():
-    if len(klasses) < len(tutors):
-        zipped = tuple(zip_longest(tutors, klasses, fillvalue=None))
-        yield zipped
-    else:
-        for i in range(len(tutors)):
-            yield tutors[i], klasses[i]
-
-
-print(*sor_klasses())
+print(*result)
